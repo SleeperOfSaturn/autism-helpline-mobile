@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+  <style>
+    body {
+      font-family: 'Lexend', sans-serif;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      background: url("menu_bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(8px); /* Dark blur effect */
+      color: #fff; /* White text color for contrast */
+    }
+
+    .content {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .custom-button {
+      display: inline-block;
+      padding: 15px 40px;
+      font-size: 1.8rem;
+      border: none;
+      color: #FFFFFF;
+      cursor: pointer;
+      border-radius: 15px;
+      box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .button-yellow {
+      background-color: #ffc107;
+    }
+
+    .button-red {
+      background-color: #ff6347;
+    }
+
+    .button-green {
+      background-color: #4caf50;
+    }
+
+    .button-blue {
+      background-color: #1e90ff;
+    }
+
+    .custom-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+      filter: brightness(90%);
+    }
+
+    .button-yellow:hover {
+      background-color: #ffb400;
+    }
+
+    .button-red:hover {
+      background-color: #ff4c36;
+    }
+
+    .button-green:hover {
+      background-color: #459f3e;
+    }
+
+    .button-blue:hover {
+      background-color: #1862b0;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Help yourself!</h1>
+    <button type="button" class="custom-button button-yellow" onclick="location.href = 'index.html'">Back To Homepage</button>
+    <button type="button" class="custom-button button-red" onclick="location.href = 'minigames.html'">Cool Puzzles</button>
+    <button type="button" class="custom-button button-green" onclick="location.href = 'autism_types.html'">Understanding Yourself</button>
+    <button type="button" class="custom-button button-blue" onclick="location.href = 'https://www.autismspeaks.org/speech-therapy'">Speech and Language Therapy</button>
+    <button type="button" class="custom-button button-yellow" onclick="location.href = 'https://www.autismspeaks.org/social-skills-and-autism'">Social Skill Training</button>
+    <button type="button" class="custom-button button-red" onclick="location.href = 'https://www.autismspeaks.org/cognitive-behavioral-therapy-cbt'">Cognitive Behavioral Therapy</button>
+  </div>
+</body>
+
+</html>
